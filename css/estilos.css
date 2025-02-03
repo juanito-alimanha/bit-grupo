@@ -1,7 +1,53 @@
-body{
-    background-color: rgb(95, 78, 122);
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: gray;
 }
 
+/* Contenedor principal del blog */
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: paleturquoise;
+    border: 15px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Contenido principal */
+.blog-content {
+    line-height: 1.8;
+    color: #444444;
+    font-size: 1.1em;
+}
+
+
+
+@media (max-width: 768px) {
+    .blog-container {
+        margin: 10px;
+        padding: 20px;
+        border-width: 10px;
+    }    
+    .blog-content {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .blog-container {
+        padding: 15px;
+        border-width: 8px;
+    }
+}
 /*
 boton extraido de https://getcssscan.com/css-buttons-examples
 */
@@ -39,3 +85,4 @@ boton extraido de https://getcssscan.com/css-buttons-examples
     background: var(--color);
     color: #fff;
   }
+
